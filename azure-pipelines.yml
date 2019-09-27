@@ -24,7 +24,7 @@ stages:
       displayName: Build an image
       inputs:
         command: buildAndPush
-        containerRegistry: dockerRegistryServiceConnection1
+        containerRegistry: AzureContainerRegistryBook
         dockerfile: 'CHAP07/appdocker/Dockerfile'
         tags: |
           $(Build.BuildNumber)
